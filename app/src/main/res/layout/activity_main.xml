@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daily Expense App"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#0D47A1"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/tvRegisterNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="732923ITR045"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:padding="8dp"/>
+
+        <EditText android:id="@+id/etAmount" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Amount" android:inputType="number" android:layout_marginTop="10dp"/>
+        <EditText android:id="@+id/etDesc" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Description" />
+
+        <Spinner android:id="@+id/spnCategory" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+
+        <RadioGroup android:id="@+id/rgPayment" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:id="@+id/rbCash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cash" android:checked="true"/>
+            <RadioButton android:id="@+id/rbOnline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Online" />
+        </RadioGroup>
+
+        <Button android:id="@+id/btnAdd" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Add Expense" android:backgroundTint="#1565C0"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Expense List:" android:textStyle="bold" android:layout_marginTop="15dp"/>
+
+        <ListView android:id="@+id/lvExpenses" android:layout_width="match_parent" android:layout_height="200dp" android:background="#F5F5F5" android:layout_marginTop="5dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:weightSum="2" android:layout_marginTop="10dp">
+            <Button android:id="@+id/btnCall" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Call Accountant" android:backgroundTint="#1565C0" android:textSize="12sp"/>
+            <Button android:id="@+id/btnSMS" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Send SMS" android:backgroundTint="#2E7D32" android:layout_marginStart="5dp" android:textSize="12sp"/>
+        </LinearLayout>
+
+        <Button android:id="@+id/btnEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Send Email" android:backgroundTint="#E64A19" android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+</ScrollView>
